@@ -18,7 +18,7 @@ services.AddScoped<ILoanService, LoanService>();
 services.AddScoped<IPatronService, PatronService>();
 
 services.AddSingleton<JsonData>();
-services.AddSingleton<ConsoleApp>();
+services.AddTransient<ConsoleApp>();
 
 var servicesProvider = services.BuildServiceProvider();
 
